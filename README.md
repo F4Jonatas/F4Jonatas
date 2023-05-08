@@ -14,3 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+
+## My activity:
+![contrib graph](./profile-3d-contrib/profile-gitblock.svg)
