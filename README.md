@@ -4,7 +4,7 @@
 <!--END_SECTION:waka-->
 
 <a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://wakatime.com/share/@F4Jonatas/3478a26c-d04c-4ddc-940f-76a2e07a3326.svg"/>
+  <img align="center" src="https://wakatime.com/share/@F4Jonatas/81b916e6-1586-4550-9768-2b6021ff3a8a.svg"/>
 </a>
 
 
