@@ -1,0 +1,1404 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	id="chart-e4f22a50-1a1a-4c37-8726-10092d7b1970" class="pygal-chart" viewBox="0 0 800 600" host="wakatime.com">
+	<defs>
+		<style type="text/css">
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 {
+				-webkit-user-select: none;
+				-webkit-font-smoothing: antialiased;
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .title {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 16px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .legends .legend text {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 14px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis text {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 10px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis text.major {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 10px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay text.value {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 20px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay text.label {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 10px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 14px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 text.no_data {
+				font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+				font-size: 64px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 {
+				background-color: transparent
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 path,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 rect,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 circle {
+				-webkit-transition: 150ms;
+				-moz-transition: 150ms;
+				transition: 150ms
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .graph &gt;
+
+			.background {
+				fill: transparent
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .plot &gt;
+
+			.background {
+				fill: transparent
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .graph {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 text.no_data {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .title {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .legends .legend text {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .legends .legend:hover text {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .line {
+				stroke: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .guide.line {
+				stroke: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .major.line {
+				stroke: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis text.major {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y .guides:hover .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .line-graph .axis.x .guides:hover .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .stackedline-graph .axis.x .guides:hover .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .xy-graph .axis.x .guides:hover .guide.line {
+				stroke: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .guides:hover text {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .reactive {
+				fill-opacity: .7;
+				stroke-opacity: .8;
+				stroke-width: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .ci {
+				stroke: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .reactive.active,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .active .reactive {
+				fill-opacity: .8;
+				stroke-opacity: .9;
+				stroke-width: 4
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .ci .reactive.active {
+				stroke-width: 1.5
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .series text {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip rect {
+				fill: transparent;
+				stroke: #a7a7a7;
+				-webkit-transition: opacity 150ms;
+				-moz-transition: opacity 150ms;
+				transition: opacity 150ms
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip .label {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip .label {
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip .legend {
+				font-size: .8em;
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip .x_label {
+				font-size: .6em;
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip .xlink {
+				font-size: .5em;
+				text-decoration: underline
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip .value {
+				font-size: 1.5em
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .bound {
+				font-size: .5em
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .max-value {
+				font-size: .75em;
+				fill: #a7a7a7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .map-element {
+				fill: transparent;
+				stroke: #a7a7a7 !important
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .map-element .reactive {
+				fill-opacity: inherit;
+				stroke-opacity: inherit
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-0,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-0 a:visited {
+				stroke: #f1e05a;
+				fill: #f1e05a
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-1,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-1 a:visited {
+				stroke: #e38c00;
+				fill: #e38c00
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-2,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-2 a:visited {
+				stroke: #3572A5;
+				fill: #3572A5
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-3,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-3 a:visited {
+				stroke: #012456;
+				fill: #012456
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-4,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-4 a:visited {
+				stroke: #083fa1;
+				fill: #083fa1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-5,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-5 a:visited {
+				stroke: #563d7c;
+				fill: #563d7c
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-6,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-6 a:visited {
+				stroke: #000080;
+				fill: #000080
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-7,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-7 a:visited {
+				stroke: #e34c26;
+				fill: #e34c26
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-8,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-8 a:visited {
+				stroke: #16ce40;
+				fill: #16ce40
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-9,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-9 a:visited {
+				stroke: #292929;
+				fill: #292929
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-10,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-10 a:visited {
+				stroke: #d1dbe0;
+				fill: #d1dbe0
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-11,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-11 a:visited {
+				stroke: #0060ac;
+				fill: #0060ac
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-12,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-12 a:visited {
+				stroke: #a86454;
+				fill: #a86454
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-13,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-13 a:visited {
+				stroke: #292929;
+				fill: #292929
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-14,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-14 a:visited {
+				stroke: #b07219;
+				fill: #b07219
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-15,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-15 a:visited {
+				stroke: #3178c6;
+				fill: #3178c6
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-16,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-16 a:visited {
+				stroke: #15dcdc;
+				fill: #15dcdc
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-17,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-17 a:visited {
+				stroke: #6594b9;
+				fill: #6594b9
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-18,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-18 a:visited {
+				stroke: #dc9658;
+				fill: #dc9658
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-19,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-19 a:visited {
+				stroke: #d62728;
+				fill: #d62728
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-20,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-20 a:visited {
+				stroke: #F44D27;
+				fill: #F44D27
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-21,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-21 a:visited {
+				stroke: #9467bd;
+				fill: #9467bd
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-22,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-22 a:visited {
+				stroke: #C1F12E;
+				fill: #C1F12E
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-23,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-23 a:visited {
+				stroke: #8c564b;
+				fill: #8c564b
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-24,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-24 a:visited {
+				stroke: #cb171e;
+				fill: #cb171e
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-25,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-25 a:visited {
+				stroke: #aec7e8;
+				fill: #aec7e8
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-26,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-26 a:visited {
+				stroke: #4F5D95;
+				fill: #4F5D95
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-27,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-27 a:visited {
+				stroke: #237346;
+				fill: #237346
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-28,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-28 a:visited {
+				stroke: #e377c2;
+				fill: #e377c2
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-29,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-29 a:visited {
+				stroke: #141414;
+				fill: #141414
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-30,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-30 a:visited {
+				stroke: #2A6277;
+				fill: #2A6277
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-31,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-31 a:visited {
+				stroke: #9c4221;
+				fill: #9c4221
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-32,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-32 a:visited {
+				stroke: #f7b6d2;
+				fill: #f7b6d2
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-33,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-33 a:visited {
+				stroke: #555555;
+				fill: #555555
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-34,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-34 a:visited {
+				stroke: #7f7f7f;
+				fill: #7f7f7f
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-35,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-35 a:visited {
+				stroke: #c7c7c7;
+				fill: #c7c7c7
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-36,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-36 a:visited {
+				stroke: #bcbd22;
+				fill: #bcbd22
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-37,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-37 a:visited {
+				stroke: #1d365d;
+				fill: #1d365d
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-38,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-38 a:visited {
+				stroke: #3D6117;
+				fill: #3D6117
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-39,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-39 a:visited {
+				stroke: #4298b8;
+				fill: #4298b8
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-40,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-40 a:visited {
+				stroke: #dbdb8d;
+				fill: #dbdb8d
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-41,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-41 a:visited {
+				stroke: #c8506d;
+				fill: #c8506d
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-42,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-42 a:visited {
+				stroke: #A97BFF;
+				fill: #A97BFF
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-43,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-43 a:visited {
+				stroke: #17becf;
+				fill: #17becf
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-44,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .color-44 a:visited {
+				stroke: #0060ac;
+				fill: #0060ac
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-0 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-1 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-2 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-3 text {
+				fill: white
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-4 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-5 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-6 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-7 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-8 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-9 text {
+				fill: white
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-10 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-11 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-12 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-13 text {
+				fill: white
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-14 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-15 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-16 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-17 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-18 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-19 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-20 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-21 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-22 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-23 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-24 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-25 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-26 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-27 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-28 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-29 text {
+				fill: white
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-30 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-31 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-32 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-33 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-34 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-35 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-36 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-37 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-38 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-39 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-40 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-41 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-42 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-43 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .text-overlay .color-44 text {
+				fill: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 text.no_data {
+				text-anchor: middle
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .guide.line {
+				fill: none
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .centered {
+				text-anchor: middle
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .title {
+				text-anchor: middle
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .legends .legend text {
+				fill-opacity: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.x text {
+				text-anchor: middle
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.x:not(.web) text[transform] {
+				text-anchor: start
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.x:not(.web) text[transform].backwards {
+				text-anchor: end
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y text {
+				text-anchor: end
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y text[transform].backwards {
+				text-anchor: start
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y2 text {
+				text-anchor: start
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y2 text[transform].backwards {
+				text-anchor: end
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .guide.line {
+				stroke-dasharray: 4, 4;
+				stroke: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .major.guide.line {
+				stroke-dasharray: 6, 6;
+				stroke: black
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .horizontal .axis.y .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .horizontal .axis.y2 .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .vertical .axis.x .guide.line {
+				opacity: 0
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .horizontal .axis.always_show .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .vertical .axis.always_show .guide.line {
+				opacity: 1 !important
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y .guides:hover .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.y2 .guides:hover .guide.line,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis.x .guides:hover .guide.line {
+				opacity: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .axis .guides:hover text {
+				opacity: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .nofill {
+				fill: none
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .subtle-fill {
+				fill-opacity: .2
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .dot {
+				stroke-width: 1px;
+				fill-opacity: 1;
+				stroke-opacity: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .dot.active {
+				stroke-width: 5px
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .dot.negative {
+				fill: transparent
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 text,
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 tspan {
+				stroke: none !important
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .series text.active {
+				opacity: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip rect {
+				fill-opacity: .95;
+				stroke-width: .5
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .tooltip text {
+				fill-opacity: 1
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .showable {
+				visibility: hidden
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .showable.shown {
+				visibility: visible
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .gauge-background {
+				fill: rgba(229, 229, 229, 1);
+				stroke: none
+			}
+
+			#chart-e4f22a50-1a1a-4c37-8726-10092d7b1970 .bg-lines {
+				stroke: transparent;
+				stroke-width: 2px
+			}
+		</style>
+	</defs>
+	<title>Languages over All Time (Powered by wakatime.com)</title>
+	<g class="graph pie-graph vertical">
+		<g transform="translate(248, 56)" class="plot">
+			<rect x="0" y="0" width="551.2" height="544" class="background" />
+			<g class="series serie-0 color-0">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M275.600000 27.200000 A244.800000 244.800000 0 0 1 512.299137 209.545548 L433.399425 230.363699 A163.200000 163.200000 0 0 0 275.600000 108.800000 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">400.09647229341766</desc>
+						<desc class="y centered">110.39360041602842</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-1 color-1">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M512.299137 209.545548 A244.800000 244.800000 0 0 1 426.877677 464.463255 L376.451784 400.308837 A163.200000 163.200000 0 0 0 433.399425 230.363699 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">469.0289657015916</desc>
+						<desc class="y centered">336.81693627141374</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-2 color-2">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M426.877677 464.463255 A244.800000 244.800000 0 0 1 212.625067 508.561193 L233.616711 429.707462 A163.200000 163.200000 0 0 0 376.451784 400.308837 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">316.7256598948146</desc>
+						<desc class="y centered">471.81161151999163</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-3 color-3">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M212.625067 508.561193 A244.800000 244.800000 0 0 1 66.687021 399.602535 L136.324680 357.068357 A163.200000 163.200000 0 0 0 233.616711 429.707462 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">153.55505025237198</desc>
+						<desc class="y centered">435.4656852097679</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-4 color-4">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M66.687021 399.602535 A244.800000 244.800000 0 0 1 31.368861 288.679050 L112.779241 283.119366 A163.200000 163.200000 0 0 0 136.324680 357.068357 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">81.21546030795085</desc>
+						<desc class="y centered">333.8922509585018</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-5 color-5">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M31.368861 288.679050 A244.800000 244.800000 0 0 1 45.356407 188.843955 L122.104271 216.562637 A163.200000 163.200000 0 0 0 112.779241 283.119366 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">73.57323915021175</desc>
+						<desc class="y centered">243.6947372288747</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-6 color-6">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M45.356407 188.843955 A244.800000 244.800000 0 0 1 84.523225 118.974818 L148.215484 169.983212 A163.200000 163.200000 0 0 0 122.104271 216.562637 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">97.65233065447532</desc>
+						<desc class="y centered">172.24717059403375</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-7 color-7">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M84.523225 118.974818 A244.800000 244.800000 0 0 1 137.342343 69.980545 L183.428229 137.320363 A163.200000 163.200000 0 0 0 148.215484 169.983212 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">136.8671390410742</desc>
+						<desc class="y centered">122.43665793333128</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-8 color-8">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M137.342343 69.980545 A244.800000 244.800000 0 0 1 174.001828 49.278534 L207.867885 123.519023 A163.200000 163.200000 0 0 0 183.428229 137.320363 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">175.28851305028343</desc>
+						<desc class="y centered">94.36665407098576</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-9 color-9">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M174.001828 49.278534 A244.800000 244.800000 0 0 1 188.908918 43.063991 L217.805945 119.375994 A163.200000 163.200000 0 0 0 207.867885 123.519023 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">197.10342405249594</desc>
+						<desc class="y centered">83.70691047062371</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-10 color-10">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M188.908918 43.063991 A244.800000 244.800000 0 0 1 203.604960 38.026168 L227.603306 116.017445 A163.200000 163.200000 0 0 0 217.805945 119.375994 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">209.44747063889452</desc>
+						<desc class="y centered">79.02372462106106</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-11 color-11">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M203.604960 38.026168 A244.800000 244.800000 0 0 1 215.901623 34.590767 L235.801082 113.727178 A163.200000 163.200000 0 0 0 227.603306 116.017445 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">220.7090756986555</desc>
+						<desc class="y centered">75.52357284054642</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-12 color-12">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M215.901623 34.590767 A244.800000 244.800000 0 0 1 227.606151 31.950775 L243.604101 111.967183 A163.200000 163.200000 0 0 0 235.801082 113.727178 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">230.71475850087734</desc>
+						<desc class="y centered">72.99920830417426</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-13 color-13">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M227.606151 31.950775 A244.800000 244.800000 0 0 1 237.145305 30.239217 L249.963537 110.826144 A163.200000 163.200000 0 0 0 243.604101 111.967183 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">239.57271432177575</desc>
+						<desc class="y centered">71.20648743881287</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-14 color-14">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M237.145305 30.239217 A244.800000 244.800000 0 0 1 245.675617 29.035864 L255.650412 110.023909 A163.200000 163.200000 0 0 0 249.963537 110.826144 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">247.10430600830742</desc>
+						<desc class="y centered">70.00001132690176</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-15 color-15">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M245.675617 29.035864 A244.800000 244.800000 0 0 1 250.108334 28.530875 L258.605556 109.687250 A163.200000 163.200000 0 0 0 255.650412 110.023909 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">252.5090211975452</desc>
+						<desc class="y centered">69.31105926088472</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-16 color-16">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M250.108334 28.530875 A244.800000 244.800000 0 0 1 254.396249 28.120028 L261.464166 109.413352 A163.200000 163.200000 0 0 0 258.605556 109.687250 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">256.14282346028136</desc>
+						<desc class="y centered">68.93001629708485</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-17 color-17">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M254.396249 28.120028 A244.800000 244.800000 0 0 1 257.463143 27.872791 L263.508762 109.248527 A163.200000 163.200000 0 0 0 261.464166 109.413352 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">259.2077561962783</desc>
+						<desc class="y centered">68.65965883996518</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-18 color-18">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M257.463143 27.872791 A244.800000 244.800000 0 0 1 260.225810 27.683250 L265.350540 109.122167 A163.200000 163.200000 0 0 0 263.508762 109.248527 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">261.63684022136005</desc>
+						<desc class="y centered">68.4784282465464</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-19 color-19">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M260.225810 27.683250 A244.800000 244.800000 0 0 1 262.836808 27.532945 L267.091206 109.021963 A163.200000 163.200000 0 0 0 265.350540 109.122167 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">263.875923740114</desc>
+						<desc class="y centered">68.33717561652944</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-20 color-20">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M262.836808 27.532945 A244.800000 244.800000 0 0 1 265.141850 27.423494 L268.627900 108.948996 A163.200000 163.200000 0 0 0 267.091206 109.021963 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">265.924333505262</desc>
+						<desc class="y centered">68.2295863529678</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-21 color-21">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M265.141850 27.423494 A244.800000 244.800000 0 0 1 267.294065 27.340949 L270.062710 108.893966 A163.200000 163.200000 0 0 0 268.627900 108.948996 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">267.7815554313728</desc>
+						<desc class="y centered">68.14987877235075</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-22 color-22">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M267.294065 27.340949 A244.800000 244.800000 0 0 1 269.139338 27.285268 L271.292892 108.856846 A163.200000 163.200000 0 0 0 270.062710 108.893966 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">269.4472074199867</desc>
+						<desc class="y centered">68.09280752394403</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-23 color-23">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M269.139338 27.285268 A244.800000 244.800000 0 0 1 270.984979 27.243506 L272.523319 108.829004 A163.200000 163.200000 0 0 0 271.292892 108.856846 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">270.98509936069087</desc>
+						<desc class="y centered">68.05220596415046</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-24 color-24">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M270.984979 27.243506 A244.800000 244.800000 0 0 1 271.754080 27.230212 L273.036053 108.820142 A163.200000 163.200000 0 0 0 272.523319 108.829004 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">272.07460342567083</desc>
+						<desc class="y centered">68.03046409085078</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-25 color-25">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M271.754080 27.230212 A244.800000 244.800000 0 0 1 272.369388 27.221318 L273.446258 108.814212 A163.200000 163.200000 0 0 0 273.036053 108.820142 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">272.65144239525085</desc>
+						<desc class="y centered">68.02130991681639</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-26 color-26">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M272.369388 27.221318 A244.800000 244.800000 0 0 1 272.984716 27.213970 L273.856478 108.809314 A163.200000 163.200000 0 0 0 273.446258 108.814212 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">273.1642080860847</desc>
+						<desc class="y centered">68.01454238659045</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-27 color-27">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M272.984716 27.213970 A244.800000 244.800000 0 0 1 273.600061 27.208170 L274.266708 108.805446 A163.200000 163.200000 0 0 0 273.856478 108.809314 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">273.67698916886036</desc>
+						<desc class="y centered">68.00906385492684</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-28 color-28">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M273.600061 27.208170 A244.800000 244.800000 0 0 1 274.061579 27.204834 L274.574386 108.803223 A163.200000 163.200000 0 0 0 274.266708 108.805446 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">274.1256826951871</desc>
+						<desc class="y centered">68.00532754876974</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-29 color-29">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M274.061579 27.204834 A244.800000 244.800000 0 0 1 274.523101 27.202369 L274.882068 108.801579 A163.200000 163.200000 0 0 0 274.574386 108.803223 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">274.5102829057308</desc>
+						<desc class="y centered">68.00291051915849</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-30 color-30">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M274.523101 27.202369 A244.800000 244.800000 0 0 1 274.830786 27.201209 L275.087190 108.800806 A163.200000 163.200000 0 0 0 274.882068 108.801579 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">274.83078609802806</desc>
+						<desc class="y centered">68.00145022580918</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-31 color-31">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M274.830786 27.201209 A244.800000 244.800000 0 0 1 275.138471 27.200435 L275.292314 108.800290 A163.200000 163.200000 0 0 0 275.087190 108.800806 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">275.08719005691745</desc>
+						<desc class="y centered">68.00064454522834</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-32 color-32">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M275.138471 27.200435 A244.800000 244.800000 0 0 1 275.446157 27.200048 L275.497438 108.800032 A163.200000 163.200000 0 0 0 275.292314 108.800290 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">275.34359482592777</desc>
+						<desc class="y centered">68.0001611363707</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-33 color-33">
+				<g class="slices">
+					<g class="slice">
+						<path
+							d="M275.446157 27.200048 A244.800000 244.800000 0 0 1 275.600000 27.200000 L275.600000 108.800000 A163.200000 163.200000 0 0 0 275.497438 108.800032 z"
+							class="slice reactive tooltip-trigger" />
+						<desc class="value" />
+						<desc class="x centered">275.5358986906585</desc>
+						<desc class="y centered">68.0000100710244</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-34 color-34">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-35 color-35">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-36 color-36">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-37 color-37">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-38 color-38">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-39 color-39">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-40 color-40">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-41 color-41">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-42 color-42">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-43 color-43">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+			<g class="series serie-44 color-44">
+				<g class="slices">
+					<g class="slice">
+						<desc class="value" />
+						<desc class="x centered">275.5999999999989</desc>
+						<desc class="y centered">68.0</desc>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g class="titles"><text x="400.0" y="26" class="title plot_title">Languages over All Time (Powered by <a
+					xlink:href="https://wakatime.com" target="_blank"
+					style="text-decoration: underline; fill: rgb(167, 167, 167);">wakatime.com</a>)</text></g>
+		<g transform="translate(10, 66)" class="legends" style="&#10;">
+			<g id="activate-serie-0" class="legend reactive activate-serie">
+				<rect x="0.0" y="1.0" width="12" height="12" class="color-0 reactive" /><text x="17.0" y="11.2">JavaScript
+					(20.89%)</text>
+			</g>
+			<g id="activate-serie-1" class="legend reactive activate-serie">
+				<rect x="0.0" y="20" width="12" height="12" class="color-1 reactive" /><text x="17.0" y="30.2">SQL
+					(18.50%)</text>
+			</g>
+			<g id="activate-serie-2" class="legend reactive activate-serie">
+				<rect x="0.0" y="39" width="12" height="12" class="color-2 reactive" /><text x="17.0" y="49.2">Python
+					(14.74%)</text>
+			</g>
+			<g id="activate-serie-3" class="legend reactive activate-serie">
+				<rect x="0.0" y="58" width="12" height="12" class="color-3 reactive" /><text x="17.0" y="68.2">PowerShell
+					(12.13%)</text>
+			</g>
+			<g id="activate-serie-4" class="legend reactive activate-serie">
+				<rect x="0.0" y="77" width="12" height="12" class="color-4 reactive" /><text x="17.0" y="87.2">Markdown
+					(7.64%)</text>
+			</g>
+			<g id="activate-serie-5" class="legend reactive activate-serie">
+				<rect x="0.0" y="96" width="12" height="12" class="color-5 reactive" /><text x="17.0" y="106.2">CSS
+					(6.60%)</text>
+			</g>
+			<g id="activate-serie-6" class="legend reactive activate-serie">
+				<rect x="0.0" y="115" width="12" height="12" class="color-6 reactive" /><text x="17.0" y="125.2">Lua
+					(5.23%)</text>
+			</g>
+			<g id="activate-serie-7" class="legend reactive activate-serie">
+				<rect x="0.0" y="134" width="12" height="12" class="color-7 reactive" /><text x="17.0" y="144.2">HTML
+					(4.70%)</text>
+			</g>
+			<g id="activate-serie-8" class="legend reactive activate-serie">
+				<rect x="0.0" y="153" width="12" height="12" class="color-8 reactive" /><text x="17.0" y="163.2">Other
+					(2.74%)</text>
+			</g>
+			<g id="activate-serie-9" class="legend reactive activate-serie">
+				<rect x="0.0" y="172" width="12" height="12" class="color-9 reactive" /><text x="17.0" y="182.2">JSON
+					(1.05%)</text>
+			</g>
+			<g id="activate-serie-10" class="legend reactive activate-serie">
+				<rect x="0.0" y="191" width="12" height="12" class="color-10 reactive" /><text x="17.0" y="201.2">INI
+					(1.01%)</text>
+			</g>
+			<g id="activate-serie-11" class="legend reactive activate-serie">
+				<rect x="0.0" y="210" width="12" height="12" class="color-11 reactive" /><text x="17.0" y="220.2">XML
+					(0.83%)</text>
+			</g>
+			<g id="activate-serie-12" class="legend reactive activate-serie">
+				<rect x="0.0" y="229" width="12" height="12" class="color-12 reactive" /><text x="17.0" y="239.2">Pug
+					(0.78%)</text>
+			</g>
+			<g id="activate-serie-13" class="legend reactive activate-serie">
+				<rect x="0.0" y="248" width="12" height="12" class="color-13 reactive" /><text x="17.0" y="258.2">JSON with
+					Comments (0.63%)</text>
+			</g>
+			<g id="activate-serie-14" class="legend reactive activate-serie">
+				<rect x="0.0" y="267" width="12" height="12" class="color-14 reactive" /><text x="17.0" y="277.2">Java
+					(0.56%)</text>
+			</g>
+			<g id="activate-serie-15" class="legend reactive activate-serie">
+				<rect x="0.0" y="286" width="12" height="12" class="color-15 reactive" /><text x="17.0" y="296.2">TypeScript
+					(0.29%)</text>
+			</g>
+			<g id="activate-serie-16" class="legend reactive activate-serie">
+				<rect x="0.0" y="305" width="12" height="12" class="color-16 reactive" /><text x="17.0" y="315.2">VBScript
+					(0.28%)</text>
+			</g>
+			<g id="activate-serie-17" class="legend reactive activate-serie">
+				<rect x="0.0" y="324" width="12" height="12" class="color-17 reactive" /><text x="17.0" y="334.2">AutoHotkey
+					(0.20%)</text>
+			</g>
+			<g id="activate-serie-18" class="legend reactive activate-serie">
+				<rect x="0.0" y="346" width="12" height="12" class="color-18 reactive" /><text x="17.0" y="356.2">RPMSpec
+					(0.18%)</text>
+			</g>
+			<g id="activate-serie-19" class="legend reactive activate-serie">
+				<rect x="0.0" y="362" width="12" height="12" class="color-19 reactive" /><text x="17.0" y="372.2">Image (svg)
+					(0.17%)</text>
+			</g>
+			<g id="activate-serie-20" class="legend reactive activate-serie">
+				<rect x="0.0" y="381" width="12" height="12" class="color-20 reactive" /><text x="17.0" y="391.2">Git Config
+					(0.15%)</text>
+			</g>
+			<g id="activate-serie-21" class="legend reactive activate-serie">
+				<rect x="0.0" y="400" width="12" height="12" class="color-21 reactive" /><text x="17.0" y="410.2">Text
+					(0.14%)</text>
+			</g>
+			<g id="activate-serie-22" class="legend reactive activate-serie">
+				<rect x="0.0" y="419" width="12" height="12" class="color-22 reactive" /><text x="17.0" y="429.2">Batchfile
+					(0.12%)</text>
+			</g>
+			<g id="activate-serie-23" class="legend reactive activate-serie">
+				<rect x="0.0" y="438" width="12" height="12" class="color-23 reactive" /><text x="17.0" y="448.2">Bash
+					(0.12%)</text>
+			</g>
+		</g>
+	</g>
+</svg>
