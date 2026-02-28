@@ -15,5 +15,5 @@ Markdown             41 mins               █▒░░░░░░░░░░�
 
 
 <a href="https://wakatime.com/@F4Jonatas">
-  <img align="center" src="https://raw.githubusercontent.com/F4Jonatas/F4Jonatas/refs/heads/main/assets/waka.svg"/>
+  <img alt="" align="center" src="assets/metrics.plugin.wakatime.svg"/>
 </a>
